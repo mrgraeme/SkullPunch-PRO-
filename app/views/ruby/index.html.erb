@@ -1,7 +1,27 @@
 
-<div class="container">
+<div style="background: url('/images/background-<%= rand(2) %>.jpg') no-repeat;" class="container">
 
 <h1><%= @firstword %> <%= @secondword %><%= @thirdword %> <%= @fourthword %>
 </h1>
 
+</div>
+
+
+<div class="ingredients">
+<h2>Guide lines</h2>
+<p>Take 2 heaped servings after every meal<p>
+<h2>Ingredients</h2>
+<ul>
+<li>
+<%= @ingredient1 %>
+</li><li>
+<%= @ingredient2 %>
+</li><li>
+<%= @ingredient3 %>
+</li><li>
+<%= @ingredient4 %>
+</li>
+</ul>
+
+<a href="/">More Body Building Suppliments</a>
 </div>
