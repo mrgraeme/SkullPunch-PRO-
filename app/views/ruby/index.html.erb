@@ -1,25 +1,23 @@
 <a href="/">
 <div style="background: url('/images/background-<%= rand(2) %>.jpg') no-repeat; display:block;" class="container">
-<h1><%= @firstword %> <%= @secondword %><%= @thirdword %> <%= @fourthword %>
+<h1><%= @supplement_name %>
 </h1>
 </div>
 </a>
 
 <div class="ingredients">
 <h2>Guide lines</h2>
-<p>Take 2 heaped servings after every meal<p>
+<p><%= @instructions %><p>
 <h2>Ingredients</h2>
+
 <ul>
+<% (0..@number_ingredients-1).each do |i| %>
 <li>
-<%= @ingredient1 %>
-</li><li>
-<%= @ingredient2 %>
-</li><li>
-<%= @ingredient3 %>
-</li><li>
-<%= @ingredient4 %>
+<%= (rand(20)+1).to_s + @select_measures[i] + @select_ingredients[i] %>
 </li>
+<% end %>
 </ul>
+
 
 <a href="/">More Body Building Suppliments</a>
 </div>
