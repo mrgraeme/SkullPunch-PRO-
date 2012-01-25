@@ -14,7 +14,7 @@ class RubyController < ApplicationController
     end
     
     @number_ingredients = 5
-    measures = [' handfuls of ', ' pinches of ', ' measures of ', ' pints of ', ' Kilograms of ', ' Ounces of ']
+    measures = [' handfuls of ', ' pinches of ', ' measures of ', ' pints of ', ' kilograms of ', ' ounces of ']
     ingredients = ['Shark spleen', 'Giant squid heart', 'Warrior monk hair', 'Yeti pelvis', 'Marmot claw', 'Wrestler arm hair', 'Hell fire', 
 	'Italian flair', 'Street fighter spittle', 'Diced Bulgarian bull testicle', 'Hair form the back of a Tibetan monk', 'Naval fluff', 
 	"A French woman's arm hair", 'Sumo wrestlers sweat', 'Diced cauliflower ear', 'Seagull stomach lining', 'Pigeon skin', 'Mashed buffalo eye', 
