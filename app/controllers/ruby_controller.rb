@@ -3,9 +3,9 @@ class RubyController < ApplicationController
 
   def index
 
-    first = ['Enemy', 'Warrior', 'Cagefight', 'Skull', 'Winner', 'Hulk', 'Goliath', 'Fighter', 'Soldier', 'Mercenary', 'Shogun', 'Ninja', 'Killer', 'Monster', 'Beast', 'Crippler', 'Samurai', 'Iron', 'Steel', 'Solid', 'Shaman', 'Emperor', 'Stone', 'Rhino', 'Rock' ]  
-    second = ['Face', 'Palm', 'Death', 'Bone', 'Terror', 'Macho', 'Chest', 'Abs', 'Torso', 'Rip', 'Eye', 'Head', "'Roid", 'Nipple', 'Throat', 'Pec', 'Power', 'Mega', 'Gym', 'Powder' ]
-    third = ['Strike', 'Smash', 'Punch', 'Smack', 'Slap', 'Thump', 'Crunch', 'Hurt', 'Burn', 'Destroy', 'Pound', 'Rake', 'Chop', 'Poke', 'Slam', 'Pinch', 'Flick', 'Shove', 'Tweak', 'Assault', 'Harass']
+    first = ['Enemy', 'Warrior', 'Cagefight', 'Winner', 'Hulk', 'Goliath', 'Fighter', 'Soldier', 'Mercenary', 'Shogun', 'Ninja', 'Killer', 'Monster', 'Beast', 'Crippler', 'Samurai', 'Iron', 'Steel', 'Solid', 'Shaman', 'Emperor', 'Stone', 'Rhino', 'Rock' ]  
+    second = ['Face', 'Palm', 'Death', 'Bone', 'Skull', 'Terror', 'Macho', 'Chest', 'Abs', 'Torso', 'Eye', 'Head', "'Roid", 'Nipple', 'Throat', 'Pec', 'Power', 'Mega', 'Gym', 'Powder' ]
+    third = ['Strike', 'Smash', 'Punch', 'Smack', 'Slap', 'Thump', 'Crunch', 'Burn', 'Destroy', 'Pound', 'Rake', 'Chop', 'Poke', 'Slam', 'Pinch', 'Flick', 'Shove', 'Tweak', 'Assault', 'Harass']
     fourth = ['Pro', 'Elite', '6000', '7000', 'Evo!', 'Ultimate', 'Complete', 'Max', 'XXX', 'Semi-Pro', 'Extreme', 'Evolution', '3000']
 
     @supplement_name = first[rand(first.length)-1] + " " + second[rand(second.length)-1] + third[rand(third.length)-1] + " " + fourth[rand(fourth.length)-1]
@@ -26,7 +26,7 @@ class RubyController < ApplicationController
     @select_measures = measures.sample(@number_ingredients)
     @select_ingredients = ingredients.sample(@number_ingredients)
 
-    @usage = [' mouthfuls ', ' gulgs ', ' gulps ', ' swigs ', ' heaped teaspoons ', ' shots ', 'servings ', 'pints ', 'scoops', 'tablespoons' ]
+    @usage = [' mouthfuls ', ' glugs ', ' gulps ', ' swigs ', ' heaped teaspoons ', ' shots ', 'servings ', 'pints ', 'scoops', 'tablespoons' ]
     @interval = [' meal ', ' sneeze ', ' session ', ' blue moon ', ' solar eclipse ', ' lunar eclipse ', ' blink of an eye ', ' sign ', ' every curse word ', ' shower ', ' bath ', ' hangover ', ' sleep ', ' work day ', ' video gaming session '  ]
     
     @instructions = "Take " + (rand(20)+1).to_s + " " + @usage[rand(@usage.length-1)] + "after every" + @interval[rand(@interval.length-1)] 
