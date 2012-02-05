@@ -1,14 +1,14 @@
 body{
-background-color: #000;
-width: 580px;
-margin-left: auto;
-margin-right: auto;
+	background: url('/images/dark-tile.gif') #000;
+	width: 580px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 
 .container{
-	background: url('/images/body.jpg') no-repeat;
+
 	margin-left: auto;
 	margin-right: auto;
 	height: 420px;
@@ -17,33 +17,46 @@ margin-right: auto;
 }
 
 a{
-text-decoration: none;	
+	text-decoration: none;	
 }
 
 h1{
-	
+
 	color: red;
 	padding: 350px 20px;
 	font-family: 'Black Ops One', cursive;
 }
 
-.ingredients{
+.box{
+	background: #000000;
 	font-family: 'Black Ops One', cursive;
-		color: #fff;
-		margin-left: 23px;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	width: 580px;
+	border: solid #fff 1px;
 }
 
-.ingredients h2{
+.box h2{
 	color: red;
 }
 
-.ingredients ul{
+.box ul{
 	padding-left: 23px;
 }
 
-.ingredients li{
+.box li{
 	list-style: none;
-
 	margin: 0px 0px 10px 0px;
 	padding: 0px;
 }
+
+.box h1, .box h2, .box p{
+margin: 20px;
+}
+
+.box a{
+	color: #ff0000;
+}
+

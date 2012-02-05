@@ -26,7 +26,7 @@ class RubyController < ApplicationController
     @select_measures = measures.sample(@number_ingredients)
     @select_ingredients = ingredients.sample(@number_ingredients)
 
-    @usage = [' mouthfuls ', ' glugs ', ' gulps ', ' swigs ', ' heaped teaspoons ', ' shots ', 'servings ', 'pints ', 'scoops', 'tablespoons' ]
+    @usage = [' mouthfuls ', ' glugs ', ' gulps ', ' swigs ', ' heaped teaspoons ', ' shots ', ' servings ', ' pints ', ' scoops ', ' tablespoons' ]
     @interval = [' meal ', ' sneeze ', ' session ', ' blue moon ', ' solar eclipse ', ' lunar eclipse ', ' blink of an eye ', ' sign ', ' every curse word ', ' shower ', ' bath ', ' hangover ', ' sleep ', ' work day ', ' video gaming session '  ]
     
     @instructions = "Take " + (rand(20)+1).to_s + " " + @usage[rand(@usage.length-1)] + "after every" + @interval[rand(@interval.length-1)] 

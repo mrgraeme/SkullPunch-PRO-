@@ -1,19 +1,18 @@
 <a href="/">
-<div style="background: url('/images/background-<%= rand(4) %>.jpg') no-repeat; display:block;" class="container">
+<div style="background: url('/images/background-<%= rand(4) %>.jpg') no-repeat; display:block; background-color: #000000" class="container">
 <h1><%= @supplement_name %>
 </h1>
 </div>
 </a>
 
+<div class="box">
+<p style="text-align: center;"><a href="/">Show another Body Building Supplement</a><p>
+</div>
 
-
-<div class="ingredients">
-<p style="text-align: right;"><a href="/">Show another Body Building Suppliment</a><p>
-
+<div class="box">
 <h2>Guide lines</h2>
 <p><%= @instructions %><p>
 <h2>Ingredients</h2>
-
 <ul>
 <% (0..@number_ingredients-1).each do |i| %>
 <li>
@@ -21,7 +20,8 @@
 </li>
 <% end %>
 </ul>
+</div>
 
-
-
+<div class="box">
+<p style="text-align: center; font-size: 10px">More real <a style="color: #666666" href="http://www.bodybuildingwarehouse.co.uk/">body building supplements</a><p>
 </div>
