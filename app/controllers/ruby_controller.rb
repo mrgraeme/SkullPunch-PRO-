@@ -31,7 +31,7 @@ class RubyController < ApplicationController
     
     @instructions = "Take " + (rand(20)+1).to_s + " " + @usage[rand(@usage.length-1)] + "after every" + @interval[rand(@interval.length-1)] 
 
-copy_array = ["More real <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/'>bodybuilding supplements</a> such as whey protein and creatine", 
+copy_array = ["More real <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/'>bodybuilding supplements</a> such as <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/whey-protein-protein-shakes'>whey protein</a> and <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/creatine'>creatine</a>", 
   "More real <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/'>bodybuilding supplements</a> like <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/whey-protein-protein-shakes'>whey protein</a> and <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/creatine'>creatine</a>",
   "Or you could just try some real <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/'>bodybuilding supplements</a> like <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/whey-protein-protein-shakes'>whey protein</a> or <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/creatine'>creatine</a>",
   "Or maybe just stick to the regular <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/'>bodybuilding supplements</a> such as <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/whey-protein-protein-shakes'>whey protein</a> or <a style='color: #666666' href='http://www.bodybuildingwarehouse.co.uk/creatine'>creatine</a>",
