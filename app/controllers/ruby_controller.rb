@@ -16,7 +16,7 @@ class RubyController < ApplicationController
     @number_ingredients = 5
     measures = [' handfuls of ', ' pinches of ', ' measures of ', ' pints of ', ' kilograms of ', ' ounces of ']
     ingredients = ['Shark spleen', 'Giant squid heart', 'Warrior monk hair', 'Yeti pelvis', 'Marmot claw', 'Wrestler arm hair', 'Hell fire', 
-	'Italian flair', 'Street fighter spittle', 'Diced Bulgarian bull testicle', 'Hair form the back of a Tibetan monk', 'Naval fluff', 
+	'Italian flair', 'Street fighter spittle', 'Diced Bulgarian bull testicle', 'Hair from the back of a Tibetan monk', 'Naval fluff', 
 	"A French woman's arm hair", 'Sumo wrestlers sweat', 'Diced cauliflower ear', 'Seagull stomach lining', 'Pigeon skin', 'Mashed buffalo eye', 
 	'Unicorn liver', 'Grated Rhino Appendix', 'English sarcasm', "Strongman's cartilage", "Mythical gnat's tooth", 'Alien drool', 
 	"Arnold Schwarzenegger's ear wax", "A Russian's blood (warning: 50% Vodka)", "A Greek god's nasal hair", 'Absinthe', 'Tequila worms', "Sewer rat's tail",  
